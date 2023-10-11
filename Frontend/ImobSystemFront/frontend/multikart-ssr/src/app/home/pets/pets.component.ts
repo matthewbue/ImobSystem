@@ -10,7 +10,7 @@ import { ProductService } from '../../shared/services/product.service';
 })
 export class PetsComponent implements OnInit, OnDestroy {
 
-  public themeLogo: string = 'assets/images/icon/logo-13.png'; // Change Logo
+  public themeLogo: string = 'assets/images/icon/facilita-logo2.png'; // Change Logo
   
   public products: Product[] = [];
   
@@ -23,13 +23,13 @@ export class PetsComponent implements OnInit, OnDestroy {
   }
 
   public sliders = [{
-    title: 'every pet is different',
-    subTitle: 'lets shop',
-    image: 'assets/images/slider/17.jpg'
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/32.jpeg'
   }, {
-    title: 'Any thing that pets want',
-    subTitle: 'save 20%',
-    image: 'assets/images/slider/18.jpg'
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/31.jpeg'
   }];
 
   // Logo
@@ -107,7 +107,7 @@ export class PetsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // Change color for this layout
-    document.documentElement.style.setProperty('--theme-deafult', '#ff9944');
+    document.documentElement.style.setProperty('--theme-deafult', '#2837d1');
   }
 
   ngOnDestroy(): void {

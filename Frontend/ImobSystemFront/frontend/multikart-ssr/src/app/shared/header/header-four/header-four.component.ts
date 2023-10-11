@@ -8,7 +8,7 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 export class HeaderFourComponent implements OnInit {
 
   @Input() class: string = 'header-2 header-6';
-  @Input() themeLogo: string = 'assets/images/icon/logo.png'; // Default Logo
+  @Input() themeLogo: string = 'assets/images/facilita-logo.png'; // Default Logo
   @Input() topbar: boolean = true; // Default True
   @Input() sticky: boolean = false; // Default false
   

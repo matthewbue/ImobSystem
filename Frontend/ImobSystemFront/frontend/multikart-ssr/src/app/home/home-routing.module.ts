@@ -53,7 +53,7 @@ const routes: Routes = [
     component: ElectronicsComponent
   },
   {
-    path: 'pets',
+    path: 'facilita',
     component: PetsComponent
   },
   {

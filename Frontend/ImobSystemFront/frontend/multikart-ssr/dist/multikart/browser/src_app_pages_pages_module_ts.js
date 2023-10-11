@@ -2837,25 +2837,43 @@ class ErrorComponent {
   static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
     type: ErrorComponent,
     selectors: [["app-error"]],
-    decls: 10,
+    decls: 26,
     vars: 0,
-    consts: [[1, "p-0"], [1, "container"], [1, "content"], ["src", "assets/images/facilita-logo.png", "alt", "Facilita Logo"]],
+    consts: [[1, "container"], [1, "content"], [1, "centered-content"], ["src", "assets/images/facilita-logo.png", "alt", "Facilita Logo"], [1, "info"], [1, "contact-info"], [1, "whatsapp"], ["href", "tel:2134374422"]],
     template: function ErrorComponent_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0)(1, "div", 1)(2, "div", 2)(3, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Site em Manuten\u00E7\u00E3o");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Site em Manuten\u00E7\u00E3o");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Nosso site est\u00E1 temporariamente fora do ar para manuten\u00E7\u00E3o.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Nosso site est\u00E1 temporariamente fora do ar para manuten\u00E7\u00E3o.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Por favor, volte em breve.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Por favor, volte em breve.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 4)(11, "div", 5)(12, "address")(13, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Rua Professor Castilhos, 431 sala 725");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "img", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Campo Grande, Rio de Janeiro");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Hor\u00E1rio de Atendimento:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "09:00 \u00E0s 12:00 e 13:00 \u00E0s 18:00 (segunda a sexta-feira)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "p", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Entre em contato pelo n\u00FAmero:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p", 6)(24, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "(21) 3437-4422");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
       }
     },
-    styles: [".container[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  animation: _ngcontent-%COMP%_fadeIn 1s ease-in-out;\n}\n\n@keyframes _ngcontent-%COMP%_fadeIn {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n.content[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\nh1[_ngcontent-%COMP%] {\n  font-size: 36px;\n  color: #333;\n}\n\np[_ngcontent-%COMP%] {\n  font-size: 18px;\n  color: #666;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFnZXMvZXJyb3IvZXJyb3IuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxnQ0FBQTtBQUNKOztBQUVFO0VBQ0U7SUFDRSxVQUFBO0VBQ0o7RUFDRTtJQUNFLFVBQUE7RUFDSjtBQUNGO0FBRUU7RUFDRSxrQkFBQTtBQUFKOztBQUdFO0VBQ0UsZUFBQTtFQUNBLFdBQUE7QUFBSjs7QUFHRTtFQUNFLGVBQUE7RUFDQSxXQUFBO0FBQUoiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG4gICAgYW5pbWF0aW9uOiBmYWRlSW4gMXMgZWFzZS1pbi1vdXQ7XHJcbiAgfVxyXG4gIFxyXG4gIEBrZXlmcmFtZXMgZmFkZUluIHtcclxuICAgIGZyb20ge1xyXG4gICAgICBvcGFjaXR5OiAwO1xyXG4gICAgfVxyXG4gICAgdG8ge1xyXG4gICAgICBvcGFjaXR5OiAxO1xyXG4gICAgfVxyXG4gIH1cclxuICBcclxuICAuY29udGVudCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIFxyXG4gIGgxIHtcclxuICAgIGZvbnQtc2l6ZTogMzZweDtcclxuICAgIGNvbG9yOiAjMzMzO1xyXG4gIH1cclxuICBcclxuICBwIHtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICAgIGNvbG9yOiAjNjY2O1xyXG4gIH1cclxuICAiXSwic291cmNlUm9vdCI6IiJ9 */"]
+    styles: ["@charset \"UTF-8\";\n.centered-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  margin-bottom: 60px; \n}\n\n.centered-content[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin-bottom: 20px;\n}\n\n.info[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.8);\n  padding: 20px;\n  border-radius: 10px;\n}\n\n.contact-info[_ngcontent-%COMP%] {\n  margin-bottom: 20px; \n}\n\n.contact-info[_ngcontent-%COMP%]   address[_ngcontent-%COMP%] {\n  font-style: normal;\n  margin-bottom: 10px;\n}\n\n.info[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin: 5px 0;\n}\n\n.info[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: #007BFF; \n}\n\n.whatsapp[_ngcontent-%COMP%] {\n  margin-top: 20px; \n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFnZXMvZXJyb3IvZXJyb3IuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FBQWhCO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBLEVBQUEsMERBQUE7QUFFRjs7QUFDQTtFQUNFLG1CQUFBO0FBRUY7O0FBQ0E7RUFDRSwwQ0FBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtBQUVGOztBQUNBO0VBQ0UsbUJBQUEsRUFBQSxrRUFBQTtBQUVGOztBQUNBO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTtBQUVGOztBQUNBO0VBQ0UsYUFBQTtBQUVGOztBQUNBO0VBQ0UscUJBQUE7RUFDQSxjQUFBLEVBQUEsNEJBQUE7QUFFRjs7QUFDQTtFQUNFLGdCQUFBLEVBQUEscUVBQUE7QUFFRiIsInNvdXJjZXNDb250ZW50IjpbIi5jZW50ZXJlZC1jb250ZW50IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLWJvdHRvbTogNjBweDsgLyogRXNwYcODwqdvIGVudHJlIG8gY29udGXDg8K6ZG8gY2VudHJhbGl6YWRvIGUgYXMgaW5mb3JtYcODwqfDg8K1ZXMgKi9cclxufVxyXG5cclxuLmNlbnRlcmVkLWNvbnRlbnQgaW1nIHtcclxuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4uaW5mbyB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjgpO1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcclxufVxyXG5cclxuLmNvbnRhY3QtaW5mbyB7XHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDsgLyogRXNwYcODwqdvIGVudHJlIGluZm9ybWHDg8Knw4PCtWVzIGRlIGNvbnRhdG8gZSBpbmZvcm1hw4PCp8ODwrVlcyBkbyBXaGF0c0FwcCAqL1xyXG59XHJcblxyXG4uY29udGFjdC1pbmZvIGFkZHJlc3Mge1xyXG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG59XHJcblxyXG4uaW5mbyBwIHtcclxuICBtYXJnaW46IDVweCAwO1xyXG59XHJcblxyXG4uaW5mbyBhIHtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgY29sb3I6ICMwMDdCRkY7IC8qIENvciBkbyBsaW5rIGRvIFdoYXRzQXBwICovXHJcbn1cclxuXHJcbi53aGF0c2FwcCB7XHJcbiAgbWFyZ2luLXRvcDogMjBweDsgLyogTWFyZ2VtIHN1cGVyaW9yIHBhcmEgbW92ZXIgYXMgaW5mb3JtYcODwqfDg8K1ZXMgZG8gV2hhdHNBcHAgcGFyYSBiYWl4byAqL1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
   });
 }
 

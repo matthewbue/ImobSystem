@@ -1,31 +1,39 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .content {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 36px;
-    color: #333;
-  }
-  
-  p {
-    font-size: 18px;
-    color: #666;
-  }
-  
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px; /* Espaço entre o conteúdo centralizado e as informações */
+}
+
+.centered-content img {
+  margin-bottom: 20px;
+}
+
+.info {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info {
+  margin-bottom: 20px; /* Espaço entre informações de contato e informações do WhatsApp */
+}
+
+.contact-info address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.info a {
+  text-decoration: none;
+  color: #007BFF; /* Cor do link do WhatsApp */
+}
+
+.whatsapp {
+  margin-top: 20px; /* Margem superior para mover as informações do WhatsApp para baixo */
+}
