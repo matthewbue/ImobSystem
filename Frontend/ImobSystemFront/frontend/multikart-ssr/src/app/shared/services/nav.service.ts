@@ -60,9 +60,9 @@ export class NavService {
 		{
 			 path: '/pages/aboutus', title: 'sobre nós', type: 'link' 
 		},
-		{
-			path: '/pages/login', title: 'Área do cliente', type: 'link' 
-		},
+		// {
+		// 	path: '/pages/login', title: 'Área do cliente', type: 'link' 
+		// },
 		// {
 		// 	title: 'Shop', type: 'sub', active: false, children: [
 		// 		{ path: '/shop/collection/left/sidebar', title: 'left-sidebar', type: 'link' },
@@ -168,6 +168,9 @@ export class NavService {
 				{ path: '/pages/faq', title: 'faq', type: 'link' }
 			]
 		},
+		{
+			path: '/pages/contact', title: 'contatos', type: 'link'
+		}
 		// {
 		// 	title: 'blogs', type: 'sub', active: false, children: [
 		// 		{ path: '/pages/blog/left/sidebar', title: 'left-sidebar', type: 'link' },
