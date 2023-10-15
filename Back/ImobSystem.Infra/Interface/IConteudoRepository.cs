@@ -9,8 +9,8 @@ namespace ImobSystem.Infra.Interface
 {
     public interface IConteudoRepository
     {
-        //IEnumerable<Conteudo> GetAll();
-        //void Delete(int id);
+        IEnumerable<Conteudo> GetAll();
+        void Delete(int id);
         //void Update(Conteudo modelo);
         Conteudo GetById(int id);
         void Create(Conteudo modelo);

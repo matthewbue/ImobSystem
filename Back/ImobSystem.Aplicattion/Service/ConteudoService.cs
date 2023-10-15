@@ -1,17 +1,13 @@
 ﻿using ImobSystem.Domain.DTO;
 using ImobSystem.Domain.Model;
 using ImobSystem.Infra.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ImobSystem.Aplicattion.Service
 {
     public class ConteudoService : IConteudoService
     {
         private readonly IConteudoRepository _ConteudoRepository;
+
         public ConteudoService(IConteudoRepository ConteudoRepository)
         {
             _ConteudoRepository = ConteudoRepository;
@@ -31,14 +27,14 @@ namespace ImobSystem.Aplicattion.Service
 
         public ReturnDefault Delete(int id)
         {
-            //_ConteudoRepository.Delete(id);
+            _ConteudoRepository.Delete(id);
             return new ReturnDefault("Deletado com sucesso", "");
         }
 
         public ReturnDefault GetAll()
         {
-            //var result =  _ConteudoRepository.GetAll();
-            return new ReturnDefault("Dados retornado com sucesso", "");
+            var result = _ConteudoRepository.GetAll();
+            return new ReturnDefault("Dados retornado com sucesso", result);
         }
 
         public ReturnDefault GetById(int id)

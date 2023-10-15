@@ -2,44 +2,92 @@
 using ImobSystem.Infra.Interface;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ImobySystem.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class ConteudoController : ControllerBase
 {
-    public class ConteudoController : ControllerBase
+    private readonly IConteudoService _conteudoService;
+
+    public ConteudoController(IConteudoService conteudoService)
     {
-        private readonly IConteudoService _ConteudoService;
-        public ConteudoController(IConteudoService ConteudoService)
+        _conteudoService = conteudoService ?? throw new ArgumentNullException(nameof(conteudoService));
+    }
+
+    [HttpPost("Create")]
+    public IActionResult Create([FromBody] EntryConteudoDTO entrada)
+    {
+        try
         {
-            _ConteudoService = ConteudoService;
-        }
-        [HttpPost("Create")]
-        public IActionResult Create([FromBody]EntryConteudoDTO entrada)
-        {
-            var result = _ConteudoService.Create(entrada);
+            var result = _conteudoService.Create(entrada);
             return Ok(result);
         }
-        [HttpGet("GetAll")]
-        public IActionResult GetAll()
+        catch (Exception ex)
         {
-            var result = _ConteudoService.GetAll();
+            return BadRequest("Ocorreu um erro durante a criação do conteúdo.");
+        }
+    }
+
+    [HttpGet("GetAll")]
+    public IActionResult GetAll()
+    {
+        try
+        {
+            var result = _conteudoService.GetAll();
             return Ok(result);
         }
-        [HttpGet("GetById")]
-        public IActionResult GetById(int id)
+        catch (Exception ex)
         {
-            var result = _ConteudoService.GetById(id);
+            return BadRequest("Ocorreu um erro ao buscar todos os conteúdos.");
+        }
+    }
+
+    [HttpGet("GetById/{id}")]
+    public IActionResult GetById(int id)
+    {
+        try
+        {
+            var result = _conteudoService.GetById(id);
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound($"Conteúdo com ID {id} não encontrado.");
+            }
+        }
+        catch (Exception ex)
+        {
+            return BadRequest("Ocorreu um erro ao buscar o conteúdo por ID.");
+        }
+    }
+
+    [HttpDelete("Delete/{id}")]
+    public IActionResult Delete(int id)
+    {
+        try
+        {
+            var result = _conteudoService.Delete(id);
+
+            return NoContent();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest("Ocorreu um erro ao excluir o conteúdo.");
+        }
+    }
+
+    [HttpPut("Update")]
+    public IActionResult Update([FromBody] ResponseConteudoDTO entrada)
+    {
+        try
+        {
+            var result = _conteudoService.Update(entrada);
             return Ok(result);
         }
-        [HttpDelete("Delete")]
-        public IActionResult Delete(int id)
+        catch (Exception ex)
         {
-            var result = _ConteudoService.Delete(id);
-            return Ok(result);
-        }
-        [HttpPut("Update")]
-        public IActionResult Update(ResponseConteudoDTO entrada)
-        {
-            var result = _ConteudoService.Update(entrada);
-            return Ok(result);
+            return BadRequest("Ocorreu um erro durante a atualização do conteúdo.");
         }
     }
 }
