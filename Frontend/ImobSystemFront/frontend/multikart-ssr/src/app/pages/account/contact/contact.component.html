@@ -1,45 +1,43 @@
-<app-breadcrumb [title]="'Contact'" [breadcrumb]="'Contact'"></app-breadcrumb>
+<app-breadcrumb [title]="'Contatos'" [breadcrumb]="'Contact'"></app-breadcrumb>
 <!--section start-->
 <section class=" contact-page section-b-space">
     <div class="container">
         <div class="row section-b-space">
             <div class="col-lg-7 map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50059.12775918716!2d72.78534673554945!3d21.16564923510817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1533793756956"   allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.038024976405!2d-43.56713642578995!3d-22.911968279251372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be4013ea558f3%3A0xb411b8b26afe542c!2sR.%20Prof.%20Castilho%2C%20431%20-%20SALA%3A%20725%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023045-060!5e0!3m2!1spt-BR!2sbr!4v1697386015769!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-lg-5">
                 <div class="contact-right">
                     <ul>
                         <li>
                             <div class="contact-icon">
-                                <img src="assets/images/icon/phone.png" alt="Generic placeholder image">
-                                <h6>Contact Us</h6>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <h6>Contatos</h6>
                             </div>
                             <div class="media-body">
-                                <p>+91 123 - 456 - 7890</p>
-                                <p>+86 163 - 451 - 7894</p>
+                                <p>(21) 3437-4422</p>                                
                             </div>
                         </li>
                         <li>
                             <div class="contact-icon">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h6>Address</h6>
+                                <h6>Endereço</h6>
                             </div>
                             <div class="media-body">
-                                <p>ABC Complex,Near xyz, New York</p>
-                                <p>USA 123456</p>
+                                <p>Rua Professor Castilhos, 431 sala 725</p>
+                                <p>Campo Grande</p>
                             </div>
                         </li>
                         <li>
                             <div class="contact-icon">
-                                <img src="assets/images/icon/email.png" alt="Generic placeholder image">
-                                <h6>Address</h6>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <h6>E-mail</h6>
                             </div>
                             <div class="media-body">
-                                <p>Support@Shopcart.com</p>
-                                <p>info@shopcart.com</p>
+                                <p>comercial@facilita.imb.br</p>                                
                             </div>
                         </li>
-                        <li>
+                        <!-- <li>
                             <div class="contact-icon">
                                 <i class="fa fa-fax" aria-hidden="true"></i>
                                 <h6>Fax</h6>
@@ -48,7 +46,7 @@
                                 <p>Support@Shopcart.com</p>
                                 <p>info@shopcart.com</p>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -58,27 +56,27 @@
                 <form class="theme-form">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="name">First Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter Your name" required="">
+                            <label for="name">Nome:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome aqui..." required="">
                         </div>
                         <div class="col-md-6">
-                            <label for="email">Last Name</label>
-                            <input type="text" class="form-control" id="last-name" placeholder="Email" required="">
+                            <label for="last-name">Sobrenome:</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Digite seu sobrenome aqui..." required="">
                         </div>
                         <div class="col-md-6">
-                            <label for="review">Phone number</label>
-                            <input type="text" class="form-control" id="review" placeholder="Enter your number" required="">
+                            <label for="review">Telefone:</label>
+                            <input type="text" class="form-control" id="review" placeholder="Digite seu telefone aqui..." required="">
                         </div>
                         <div class="col-md-6">
-                            <label for="email">Email</label>
+                            <label for="email">Email:</label>
                             <input type="text" class="form-control" id="email" placeholder="Email" required="">
                         </div>
                         <div class="col-md-12">
-                            <label for="review">Write Your Message</label>
-                            <textarea class="form-control" placeholder="Write Your Message" id="exampleFormControlTextarea1" rows="6"></textarea>
+                            <label for="review">Mensagem:</label>
+                            <textarea class="form-control" placeholder="Escreva sua mensagem aqui..." id="exampleFormControlTextarea1" rows="6"></textarea>
                         </div>
                         <div class="col-md-12">
-                            <button class="btn btn-solid" type="submit">Send Your Message</button>
+                            <button class="btn btn-solid" type="submit">Envie sua mensagem</button>
                         </div>
                     </div>
                 </form>

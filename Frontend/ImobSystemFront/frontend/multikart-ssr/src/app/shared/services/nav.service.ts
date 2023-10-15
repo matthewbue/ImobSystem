@@ -144,7 +144,7 @@ export class NavService {
 						//{ path: '/pages/dashboard', title: 'dashboard', type: 'link' },
 						{ path: '/pages/login', title: 'login', type: 'link' },
 						{ path: '/pages/register', title: 'register', type: 'link' },
-						{ path: '/pages/contact', title: 'contact', type: 'link' },
+						{ path: '/pages/contact', title: 'contatos', type: 'link' },
 						{ path: '/pages/forget/password', title: 'forget-password', type: 'link' },
 						{ path: '/pages/profile', title: 'profile', type: 'link' },
 						{ path: '/pages/checkout', title: 'checkout', type: 'link' },
