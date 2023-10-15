@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace ImobSystem.Infra.Interface
 {
-    public interface IProdutoService
+    public interface IConteudoService
     {
         ReturnDefault Delete(int id);
-        ReturnDefault Update(ProdutoUpdateDto entrada);
-        Task<ReturnDefault> GetAll();
+        ReturnDefault Update(ResponseConteudoDTO entrada);
+        ReturnDefault GetAll();
         ReturnDefault GetById(int id);
-        ReturnDefault Create(ProdutoCreateDto entrada);
+        ReturnDefault Create(EntryConteudoDTO entrada);
     }
 }
