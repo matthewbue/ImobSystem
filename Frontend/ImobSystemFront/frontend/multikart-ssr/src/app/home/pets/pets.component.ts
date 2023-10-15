@@ -22,15 +22,23 @@ export class PetsComponent implements OnInit, OnDestroy {
     });
   }
 
-  public sliders = [{
+  public sliders = [
+  {
     title: '',
     subTitle: '',
-    image: 'assets/images/slider/32.jpeg'
-  }, {
+    image: 'assets/images/slider/33.jpg'
+  }, 
+  {
     title: '',
     subTitle: '',
     image: 'assets/images/slider/31.jpeg'
-  }];
+  },
+  {
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/32.jpeg'
+  },
+];
 
   // Logo
   public logos = [{
