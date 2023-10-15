@@ -135,39 +135,39 @@ export class NavService {
 		// 		}
 		// 	]
 		// },
-		{
-			title: 'pages', type: 'sub', active: false, children: [
-				{
-					title: 'account', type: 'sub', active: false, children: [
-						//{ path: '/pages/wishlist', title: 'wishlist', type: 'link' },
-						//{ path: '/pages/cart', title: 'cart', type: 'link' },
-						//{ path: '/pages/dashboard', title: 'dashboard', type: 'link' },
-						{ path: '/pages/login', title: 'login', type: 'link' },
-						{ path: '/pages/register', title: 'register', type: 'link' },
-						{ path: '/pages/contact', title: 'contatos', type: 'link' },
-						{ path: '/pages/forget/password', title: 'forget-password', type: 'link' },
-						{ path: '/pages/profile', title: 'profile', type: 'link' },
-						{ path: '/pages/checkout', title: 'checkout', type: 'link' },
-					]
-				},
-				{ path: '/pages/aboutus', title: 'about-us', type: 'link' },
-				{ path: '/pages/search', title: 'search', type: 'link' },
-				{ path: '/pages/typography', title: 'typography', type: 'link', badge: true, badgeText: 'new' },
-				{ path: '/pages/review', title: 'review', type: 'link', badge: true, badgeText: 'new' },
-				{ path: '/pages/order/success', title: 'order-success', type: 'link' },
-					{ 
-						title: 'compare', type: 'sub', active: false, children: [
-							{ path: '/pages/compare/one', title: 'compare-1', type: 'link' },
-							{ path: '/pages/compare/two', title: 'compare-2', type: 'link', badge: true, badgeText: 'new' }
-						]
-					},
-				{ path: '/pages/collection', title: 'collection', type: 'link' },
-				{ path: '/pages/lookbook', title: 'lookbook', type: 'link' },
-				{ path: '/pages/404', title: '404', type: 'link' },
-				{ path: '/pages/comingsoon', title: 'coming-soon', type: 'link', badge: true, badgeText: 'new' },
-				{ path: '/pages/faq', title: 'faq', type: 'link' }
-			]
-		},
+		// {
+		// 	title: 'pages', type: 'sub', active: false, children: [
+		// 		{
+		// 			title: 'account', type: 'sub', active: false, children: [
+		// 				//{ path: '/pages/wishlist', title: 'wishlist', type: 'link' },
+		// 				//{ path: '/pages/cart', title: 'cart', type: 'link' },
+		// 				//{ path: '/pages/dashboard', title: 'dashboard', type: 'link' },
+		// 				{ path: '/pages/login', title: 'login', type: 'link' },
+		// 				{ path: '/pages/register', title: 'register', type: 'link' },
+		// 				{ path: '/pages/contact', title: 'contatos', type: 'link' },
+		// 				{ path: '/pages/forget/password', title: 'forget-password', type: 'link' },
+		// 				{ path: '/pages/profile', title: 'profile', type: 'link' },
+		// 				{ path: '/pages/checkout', title: 'checkout', type: 'link' },
+		// 			]
+		// 		},
+		// 		{ path: '/pages/aboutus', title: 'about-us', type: 'link' },
+		// 		{ path: '/pages/search', title: 'search', type: 'link' },
+		// 		{ path: '/pages/typography', title: 'typography', type: 'link', badge: true, badgeText: 'new' },
+		// 		{ path: '/pages/review', title: 'review', type: 'link', badge: true, badgeText: 'new' },
+		// 		{ path: '/pages/order/success', title: 'order-success', type: 'link' },
+		// 			{ 
+		// 				title: 'compare', type: 'sub', active: false, children: [
+		// 					{ path: '/pages/compare/one', title: 'compare-1', type: 'link' },
+		// 					{ path: '/pages/compare/two', title: 'compare-2', type: 'link', badge: true, badgeText: 'new' }
+		// 				]
+		// 			},
+		// 		{ path: '/pages/collection', title: 'collection', type: 'link' },
+		// 		{ path: '/pages/lookbook', title: 'lookbook', type: 'link' },
+		// 		{ path: '/pages/404', title: '404', type: 'link' },
+		// 		{ path: '/pages/comingsoon', title: 'coming-soon', type: 'link', badge: true, badgeText: 'new' },
+		// 		{ path: '/pages/faq', title: 'faq', type: 'link' }
+		// 	]
+		// },
 		{
 			path: '/pages/contact', title: 'contatos', type: 'link'
 		}
