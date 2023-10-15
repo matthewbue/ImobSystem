@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace ImobSystem.Infra.Interface
 {
-    public interface IProdutoRepository
+    public interface IConteudoRepository
     {
-        IEnumerable<Produto> GetAll();
+        IEnumerable<Conteudo> GetAll();
         void Delete(int id);
-        void Update(Produto modelo);
-        Produto GetById(int id);
-        void Create(Produto modelo);
+        //void Update(Conteudo modelo);
+        Conteudo GetById(int id);
+        void Create(Conteudo modelo);
     }
 }
