@@ -7323,7 +7323,7 @@ class NavService {
       // ]
     }, {
       path: '/pages/aboutus',
-      title: 'sobre nós',
+      title: 'Empresa',
       type: 'link'
     }, {
       path: '/pages/login',

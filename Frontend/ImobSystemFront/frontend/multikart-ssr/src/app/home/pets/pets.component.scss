@@ -1,0 +1,52 @@
+.text-container {
+    background-color: rgba(255, 255, 255, 0.6); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+.text-b{
+    color: black !important;
+}
+.collection-banner img {
+    width: 180px; 
+    height: 130px; 
+}
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-left {
+    float: left;    
+    max-width: 60%;
+}
+
+.section-empresa{
+    margin: 0;
+    padding: 0;
+    background-color: #003883;    
+    p, h2, span{
+        color: white !important;
+        text-align: justify;
+    }
+
+    .hover-effect {
+        transition: font-size 0.2s; 
+        cursor: pointer;
+      }
+      
+      .hover-effect:hover {
+        font-size: 1.2em;        
+      }
+      
+
+    .boxTotext{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+  

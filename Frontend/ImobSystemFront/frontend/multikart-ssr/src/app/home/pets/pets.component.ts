@@ -53,16 +53,40 @@ export class PetsComponent implements OnInit, OnDestroy {
 
   // Collection banner
   public collections1 = [{
-    image: 'assets/images/collection/pets/1.jpg',
-    title: 'Clothes'
+    image: 'assets/images/collection/pets/7.jpg',
+    title: 'Assembléias',
+    text: `
+    - Redação e envio do Edital de Convocação.
+    - Assessoria durante a realização da assembleia, com a presença de nossa equipe.
+    - Elaboração e registro da ata da assembleia, distribuída aos condôminos.
+    
+    Facilitamos todo o processo de realização de assembleias, assegurando que seja bem organizado, documentado e em conformidade com as melhores práticas de administração condominial.
+    `
   }, 
   {
-    image: 'assets/images/collection/pets/2.jpg',
-    title: 'Groom'
+    image: 'assets/images/collection/pets/8.jpg',
+    title: 'Finanças',
+    text: `
+    - Análise da movimentação do mês atual.
+    - Balancete mensal (Sintético e Analítico).
+    - Previsão orçamentária.
+    - Planilhas de consumo.
+    - Rateio de despesas.
+    - Relatório de inadimplência.
+    - Consultas de extratos online.
+    - Emissão de boletos bancários.
+    - Gráficos com a visão geral da situação financeira do condomínio online.
+     `
   },
   {
-    image: 'assets/images/collection/pets/3.jpg',
-    title: 'food'
+    image: 'assets/images/collection/pets/9.jpg',
+    title: 'Comprometimento',
+    text: `
+    - Acesso online 24 horas a todas as informações financeiras do condomínio, incluindo contas do mês atual e meses anteriores, saldo diário, boletos e mais.
+- Suporte na elaboração de previsões orçamentárias, acompanhamento do orçamento e revisões de contratos.
+- Envio mensal de prestação de contas até o dia 15, com documentação clara e objetiva.
+- Gerente dedicado para esclarecer dúvidas, auxiliar no planejamento de metas e objetivos e disponível para visitas ao prédio, conforme necessário.
+     `
   }];
 
   public collections2 = [{

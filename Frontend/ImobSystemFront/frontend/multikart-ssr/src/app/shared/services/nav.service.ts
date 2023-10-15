@@ -58,7 +58,7 @@ export class NavService {
 			// ]
 		},
 		{
-			 path: '/pages/aboutus', title: 'sobre nós', type: 'link' 
+			 path: '/pages/aboutus', title: 'empresa', type: 'link' 
 		},
 		// {
 		// 	path: '/pages/login', title: 'Área do cliente', type: 'link' 

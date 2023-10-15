@@ -11,7 +11,7 @@
 <!-- Home slider End -->
 
 <!--  logo section start-->
-<section class="section-b-space">
+<!-- <section class="section-b-space">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -19,46 +19,68 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!--  logo section End-->
 
 <!-- Banner section -->
-<section class="pt-0 banner-6">
+<section class="pt-0 banner-6 mb-4 mt-4">
     <div class="container">
         <div class="row partition3">
+          <div class="row text-center">
             <div class="col-md-4" *ngFor="let collection of collections1">
-                <a [routerLink]="['/shop/collection/left/sidebar']" [queryParams]="{ category: 'pets'}">
-                    <div class="collection-banner p-left">
-                        <img [src]="collection.image" class="img-fluid" alt="pets">
-                        <div class="contain-banner banner-3">
-                            <div>
-                                <h2>{{collection.title}}</h2>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+              <a [routerLink]="['/shop/collection/left/sidebar']" [queryParams]="{ category: 'pets'}">
+                <div class="collection-banner p-left">
+                  <img [src]="collection.image" class="img-fluid centered-image" alt="pets">
+                  <div class="contain-banner banner-3">
+                    <!-- Conteúdo adicional, se necessário -->
+                  </div>
+                </div>
+                <h3> <strong>{{ collection.title }}</strong> </h3>
+                <p>{{ collection.text }}</p>
+              </a>
             </div>
+          </div>          
         </div>
-        <div class="row partition3 banner-top-cls">
+        <!-- <div class="row partition3 banner-top-cls">
             <div class="col-md-4" *ngFor="let collection of collections2">
                 <a [routerLink]="['/shop/collection/left/sidebar']" [queryParams]="{ category: 'pets'}">
                     <div class="collection-banner p-right">
                         <img [src]="collection.image" class="img-fluid" alt="pets">
-                        <div class="contain-banner banner-3">
-                            <div>
-                                <h2>{{collection.title}}</h2>
-                            </div>
-                        </div>
+                        
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
+
+<section class="section-empresa">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/images/categories/10.jpeg" alt="Imagem da empresa" class="img-fluid image-left">
+      </div>
+      <div class="boxTotext col-md-6">
+        <h2>Sobre a Empresa</h2>
+        <hr>
+        <p>
+          A FACILITA Administração Imobiliária é uma empresa dedicada à otimização e eficiência na administração de condomínios. Compreendemos a importância de estabelecer relações sólidas e eficazes, oferecendo serviços de assessoria e consultoria condominial para atender às necessidades de síndicos e condôminos. Nosso compromisso é tornar a gestão de condomínios residenciais e comerciais mais eficiente, facilitando o relacionamento entre proprietários, locatários e prestadores de serviços.
+        </p>
+        <br>
+        <span class="btn btn" routerLink="/pages/aboutus" class="hover-effect">Saiba mais...</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
 <!-- banner section End -->
 
 <!-- Product slider -->
-<section class="section-b-space j-box pets-box">
+<!-- <section class="section-b-space j-box pets-box">
   <div class="container">
       <div class="row">
           <div class="col">
@@ -82,40 +104,34 @@
           </div>
       </div>
   </div>
-</section>
+</section> -->
 <!-- Product slider end -->
 
 <!-- Parallax banner -->
 <section class="p-0 pet-parallax">
-    <div class="full-banner parallax parallax-banner19  text-center p-center"
-        [ngStyle]="{'background-image': 'url(assets/images/parallax/6.jpg)'}">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="banner-contain">
-                        <h4>choose what you love</h4>
-                        <h3>get upto 70% off</h3>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                        <!-- <a [routerLink]="['/shop/collection/left/sidebar']"
-                           [queryParams]="{ category: 'pets'}" 
-                           class="btn btn-solid black-btn">
-                           shop now
-                        </a> -->
-                    </div>
+  <div class="full-banner parallax parallax-banner19 text-center p-center"
+      [ngStyle]="{'background-image': 'url(assets/images/parallax/23.jpg)'}">
+      <div class="container text-container">
+        <div class="row">
+            <div class="col">
+                <div class="banner-contain">
+                    <h3>Escolha a Facilita!</h3>
+                    <p class="text-b">
+                        Por que escolher nos escolher?<br> A <strong>FACILITA</strong> ADMINISTRAÇÃO IMOBILIÁRIA, gerencia condomínios
+                        comerciais, residências e imóveis. Tem uma administração moderna e arrojada, que
+                        conta com a mais sofisticada tecnologia no controle das receitas e despesas.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="pet-decor">
-            <img src="assets/images/dog.png" alt="" class="img-fluid">
-        </div>
-    </div>
+    </div>    
+  </div>
 </section>
+
 <!-- Parallax banner end -->
 
 <!-- blog section start-->
-<section class="section-b-space blog p-t-0 blog_box">
+<!-- <section class="section-b-space blog p-t-0 blog_box">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -131,7 +147,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- blog section End -->
 
 <!-- Cart Open To Left Side-->

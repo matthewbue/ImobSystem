@@ -1,0 +1,10 @@
+#button {
+    background-color: #003883;
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Adicione uma transição para suavizar a mudança */
+}
+
+#button:hover {
+    background-color: #0055a4; /* Nova cor de fundo quando o mouse estiver sobre o botão */
+    color: #fff; /* Nova cor do texto quando o mouse estiver sobre o botão */
+}
