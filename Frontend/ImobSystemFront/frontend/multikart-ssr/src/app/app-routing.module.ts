@@ -8,7 +8,7 @@ import { ElementsComponent } from './elements/elements.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home/facilita',
+    redirectTo: '/home/facilita',
     pathMatch: 'full'
   },
   {
@@ -27,7 +27,7 @@ const routes: Routes = [
     loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
   {
     path: '**', // Navigate to Home Page if not found any page
-    redirectTo: 'home/facilita',
+    redirectTo: '/home/facilita',
   },
 ];
 

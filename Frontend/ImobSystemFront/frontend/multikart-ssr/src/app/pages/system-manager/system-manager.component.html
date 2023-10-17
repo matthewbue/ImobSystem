@@ -1,0 +1,31 @@
+<app-breadcrumb [title]="'Gerenciador'" [breadcrumb]="'Gerenciador'"></app-breadcrumb>
+
+<!-- image-upload.component.html -->
+<section class="pt-0 banner-6 mb-4 mt-4">
+  <div class="container">
+    <div class="image-upload">
+      <h2>Gerenciador de Imagens</h2>
+
+      <!-- Formulário para fazer upload de imagens -->
+      <form (ngSubmit)="uploadImage()" #imageForm="ngForm">
+        <input type="file" (change)="onFileSelected($event)" #fileInput>
+        <button type="submit" [disabled]="!selectedImage">Enviar Imagem</button>
+      </form>
+
+      <!-- Exibir a imagem selecionada -->
+      <div class="preview">
+        <img *ngIf="selectedImage" [src]="selectedImageUrl" alt="Imagem Selecionada">
+      </div>
+
+      <!-- Lista de imagens enviadas -->
+      <div class="image-list">
+        <h3>Imagens Enviadas</h3>
+        <ul>
+          <li *ngFor="let image of uploadedImages">
+            <img [src]="image.url" alt="Imagem">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
