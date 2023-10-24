@@ -25,17 +25,17 @@ export class PetsComponent implements OnInit, OnDestroy {
   public sliders = [
   {
     title: '',
-    subTitle: '',
+    subTitle: 'Administação Imobiliária',
     image: 'assets/images/slider/33.jpg'
   }, 
   {
     title: '',
-    subTitle: '',
+    subTitle: 'Empreendimentos Modernos',
     image: 'assets/images/slider/31.jpeg'
   },
   {
     title: '',
-    subTitle: '',
+    subTitle: 'Confiança do cliente',
     image: 'assets/images/slider/32.jpeg'
   },
 ];

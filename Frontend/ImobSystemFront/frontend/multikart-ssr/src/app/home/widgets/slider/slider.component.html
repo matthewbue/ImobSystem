@@ -1,7 +1,7 @@
 <owl-carousel-o [options]="HomeSliderConfig" class="home-slider" [ngClass]="class">
 	<ng-container *ngFor="let slider of sliders">
 	  <ng-template carouselSlide>
-	    <div class="home" [ngClass]="textClass" [ngStyle]="{'background-image': 'url('+slider.image+')'}">
+	    <div class="home mt-4" [ngClass]="textClass" [ngStyle]="{'background-image': 'url('+slider.image+')'}">
 	      <div class="container">
 	        <div class="row">
 	          <div class="col">

@@ -27,7 +27,7 @@ header {
                     text-decoration: none;
                     text-transform: uppercase;
                     padding-top: 42px;
-                    padding-bottom: 42px;
+                   // padding-bottom: 42px;
                     padding-left: 0;
                     letter-spacing: 0.07em;
                     position: relative;
@@ -745,7 +745,7 @@ header {
         }
     }
     .toggle-nav {
-        display: none;
+        display: none !important;
     }
     .mobile-back {
         display: none !important;
@@ -902,7 +902,7 @@ header {
 
 @media (max-width: 1367px) {
     .nav-menu a {
-        font-size: 14px !important;
+        font-size: 18px !important;
     }
 }
 
@@ -1339,16 +1339,16 @@ header {
             top: -85px;
         }
     }
-    .mobile-fix-option {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 60px;
-        background-color: $font-color;
-        width: 100vw;
-        z-index: 9;
-        box-shadow: 0 2px 5px 0 rgba(168, 168, 168, 1);
-    }
+    // .mobile-fix-option {
+    //     position: fixed;
+    //     bottom: 0;
+    //     left: 0;
+    //     height: 60px;
+    //     background-color: $font-color;
+    //     width: 100vw;
+    //     z-index: 9;
+    //     box-shadow: 0 2px 5px 0 rgba(168, 168, 168, 1);
+    // }
     .header-5 {
         .top-header {
             .header-dropdown {

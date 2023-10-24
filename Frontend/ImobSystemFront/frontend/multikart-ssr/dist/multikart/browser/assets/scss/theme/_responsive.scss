@@ -66,7 +66,7 @@
     .tools_slider {
         .home-slider {
             .slider-contain {
-                margin-left: 80px;
+                margin-left: 80px;                
             }
             .home {
                 .tools-parts,
@@ -957,6 +957,7 @@
             height: 70vh;
             h1 {
                 font-size: 50px;
+                background-color: rgba(255, 255, 255, 0.399);
             }
         }
     }
@@ -1029,6 +1030,7 @@
                 .slider-contain {
                     h1 {
                         font-size: 35px;
+                        background-color: rgba(255, 255, 255, 0.399);
                     }
                     p {
                         max-width: 450px;
@@ -1487,7 +1489,7 @@
     }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 600px) {
     .main-nav-center {
         .toggle-nav {
             top: -92px;
@@ -1919,6 +1921,7 @@ background-color: $black;*/
             height: 65vh;
             h1 {
                 font-size: 36px;
+                background-color: rgba(255, 255, 255, 0.399);
             }
             .btn-solid,
             .btn-outline {
@@ -3645,6 +3648,7 @@ background-color: $black;*/
             height: 60vh;
             h1 {
                 font-size: 35px;
+                background-color: rgba(255, 255, 255, 0.399);
                 margin-top: 5px;
             }
             .btn-solid,
@@ -4783,9 +4787,10 @@ background-color: $black;*/
             height: 58vh;
         }
         .slider-contain {
-            height: 58vh;
+            height: 58vh;                      
             h1 {
-                font-size: 30px;
+                font-size: 30px;                
+                background-color: rgba(255, 255, 255, 0.399);
             }
         }
         &:hover {

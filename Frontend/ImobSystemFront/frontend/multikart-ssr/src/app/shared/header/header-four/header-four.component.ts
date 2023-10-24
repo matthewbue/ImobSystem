@@ -22,7 +22,7 @@ export class HeaderFourComponent implements OnInit {
   // @HostListener Decorator
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    let number = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (number >= 150 && window.innerWidth  > 400) { 
       this.stick = true;
     } else {

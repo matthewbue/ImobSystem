@@ -6,16 +6,17 @@
             <div class="col-lg-6">
                 <h3>Login</h3>
                 <div class="theme-card">
-                    <form class="theme-form">
+                    <form class="theme-form" (ngSubmit)="onSubmit()">
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Email" required="">
+                            <label for="username">Usuário:</label>
+                            <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" required>
                         </div>
                         <div class="form-group">
-                            <label for="review">Password</label>
-                            <input type="password" class="form-control" id="review" placeholder="Enter your password" required="">
+                            <label for="password">Senha:</label>
+                            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" required>
+                            <div class="error-message text-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
                         </div>
-                        <button class="btn btn-solid">Login</button>
+                        <button type="submit" class="btn btn-solid">Login</button>
                     </form>
                 </div>
             </div>
@@ -24,10 +25,10 @@
                 <div class="theme-card authentication-right">
                     <h6 class="title-font">Criar uma nova conta</h6>
                     <p>Crie uma nova conta para administrar o Facilita</p>
-                    <button class="btn btn-solid" [routerLink]="'/pages/register'" >Criar uma nova conta</button>
+                    <button class="btn btn-solid" [routerLink]="'/pages/register'">Criar uma nova conta</button>
                 </div>
             </div> -->
         </div>
     </div>
 </section>
-<!--Section ends-->
+<!-- Section ends -->

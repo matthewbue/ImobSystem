@@ -1,6 +1,6 @@
 <div class="main-navbar">
   <div id="mainnav">
-    <div class="toggle-nav" (click)="mainMenuToggle()">
+    <div class="toggle-nav" (click)="mainMenuToggle()" style="display: flex; justify-content: flex-end; @media (max-width: 600px) { display: flex; justify-content: flex-start; }">
       <i class="fa fa-bars sidebar-bar"></i>
     </div>
     <ul class="nav-menu" [class.opennav]="navServices?.mainMenuToggle">
