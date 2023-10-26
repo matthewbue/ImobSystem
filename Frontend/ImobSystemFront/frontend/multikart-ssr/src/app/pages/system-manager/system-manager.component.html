@@ -2,20 +2,15 @@
 
 <!-- Seção para Banner 1 -->
 <section class="pt-0 banner-6 mb-4 mt-4">
-  <div class="container">
-    <div class="image-upload">
-      <h2>Banner 1</h2>
-      <!-- Formulário e elementos de upload de imagem para Banner 1 -->
-      <!-- Substitua os identificadores de formulário e manipuladores de eventos de acordo com sua implementação -->
-      <form (ngSubmit)="uploadBanner1Image()" #banner1ImageForm="ngForm">
-        <input type="file" (change)="onBanner1FileSelected($event)" #banner1FileInput>
-        <button type="submit" [disabled]="!selectedBanner1Image">Enviar Imagem do Banner 1</button>
-      </form>
-      <div class="preview">
-        <img *ngIf="selectedBanner1Image" [src]="'/Frontend/ImobSystemFront/frontend/multikart-ssr/src/assets/images/banner'" alt="Imagem do Banner 1">
-      </div>
+  <form (ngSubmit)="uploadBanner1Image()" #banner1ImageForm="ngForm">
+    <div class="input-container">
+      <input type="file" (change)="onBanner1FileSelected($event)" #banner1FileInput>
+      <label class="label" for="banner1FileInput">Selecionar Imagem do Banner 1</label>
     </div>
-  </div>
+    <button type="submit" [disabled]="!selectedBanner1Image">
+      <i class="fas fa-upload"></i> Enviar Imagem do Banner 1
+    </button>
+  </form>
 </section>
 
 <!-- Seção para Banner 2 -->

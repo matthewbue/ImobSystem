@@ -1586,7 +1586,15 @@ header {
 @media (max-width: 480px) {
     .brand-logo {
         img {
-            height: 25px;
+            height: 80px;
         }
     }
 }
+
+// @media (max-width: 1440px) {
+//     .brand-logo {
+//         img {
+//             height: 100px;
+//         }
+//     }
+// }

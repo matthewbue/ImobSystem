@@ -126,7 +126,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 400;
-    color: $grey;
+    color: $dark-font;
     letter-spacing: 0.03em;
 }
 
@@ -163,10 +163,10 @@ li {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     color: $grey;
     line-height: 24px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
 }
 
 a {
