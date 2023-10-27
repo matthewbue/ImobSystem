@@ -1348,7 +1348,7 @@ header {
     //     width: 100vw;
     //     z-index: 9;
     //     box-shadow: 0 2px 5px 0 rgba(168, 168, 168, 1);
-    // }
+    //  }
     .header-5 {
         .top-header {
             .header-dropdown {
@@ -1376,37 +1376,39 @@ header {
                 bottom: 20px;
                 right: 32%;
                 font-size: 0;
+                color: #ebebeb;
                 padding: 0;
                 z-index: 9;
-                i {
-                    font-size: 22px;
-                    font-family: $font-themify;
-                    color: $header-font;
-                    &:before {
-                        content: "\e602";
-                    }
-                }
-                .onhover-show-div {
-                    top: unset;
-                    bottom: 42px;
-                    right: 0;
-                }
-                &:hover {
-                    i {
-                        color: $header-font;
-                    }
-                }
+                // i {
+                //     font-size: 22px;
+                //     margin-right: 150px;
+                //     font-family: $font-themify;
+                //     color: $header-font;
+                //     &:before {
+                //         content: "\e602";
+                //     }
+                // }
+                // .onhover-show-div {
+                //     top: unset;
+                //     bottom: 42px;
+                //     right: 0;
+                // }
+                // &:hover {
+                //     i {
+                //         color: $header-font;
+                //     }
+                // }
             }
-            .mobile-wishlist {
-                right: 64%;
-                i {
-                    font-family: $font-themify;
-                    color: $header-font !important;
-                    &:before {
-                        content: "\e634";
-                    }
-                }
-            }
+            // .mobile-wishlist {
+            //     right: 64%;
+            //     i {
+            //         font-family: $font-themify;
+            //         color: $header-font !important;
+            //         &:before {
+            //             content: "\e634";
+            //         }
+            //     }
+            // }
         }
     }
     .main-menu {
