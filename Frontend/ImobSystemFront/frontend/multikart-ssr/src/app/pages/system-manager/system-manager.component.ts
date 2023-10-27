@@ -9,76 +9,150 @@ import { AuthService } from "src/app/shared/services/auth.service";
 })
 export class SystemManagerComponent {
   constructor(private authService: AuthService, private router: Router) {}
+  imagePreview: string;
+  slides = [
+    { id: 1, imagePreview: "" },
+    { id: 2, imagePreview: "" },
+    { id: 3, imagePreview: "" },
+    // Adicione mais objetos para representar outros "cards" desejados
+  ];
+  aboutus = [
+    { id: 1, imagePreviewAbout: "" },    
+    // Adicione mais objetos para representar outros "cards" desejados
+  ];
+fundoPage = [
+  {id: 1, imagePreviewFundo: ""},
+]
 
-  // Variáveis para armazenar imagens e informações de cada seção
-  selectedBanner1Image: File;
-  selectedBanner2Image: File;
-  selectedBanner3Image: File;
-  selectedSobre1Image: File;
-  selectedFundo1Image: File;
-  selectedEmpresa1Image: File;
 
-  // Configurações para o cortador de imagem
-  @ViewChild("imageCropper") imageCropper: any;
-  imageChangedEvent: any = "";
-  croppedImage: any = "";
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-    if (!this.authService.isLoggedIn()) {
-      this.router.navigate(["/pages/manager"]);
+  validateImageSlide(event: any, slideId: number) {
+    const file = event.target.files[0];
+    if (file) {
+      const image = new Image();
+      image.src = URL.createObjectURL(file);
+
+      image.onload = () => {
+        const minWidth = 1500; // Largura mínima desejada em pixels
+        const minHeight = 1000; // Altura mínima desejada em pixels
+        const maxWidth = 2000; // Largura máxima desejada em pixels
+        const maxHeight = 1080; // Altura máxima desejada em pixels
+
+        if (
+          image.width < minWidth ||
+          image.height < minHeight ||
+          image.width > maxWidth ||
+          image.height > maxHeight
+        ) {
+          alert(
+            `A imagem do Slide ${slideId} deve estar entre ${minWidth}x${minHeight} pixels e ${maxWidth}x${maxHeight} pixels.`
+          );
+          // Limpa o campo de entrada de arquivo
+          event.target.value = "";
+        } else {
+          // Atualize o objeto do slide correspondente com a imagemPreview
+          this.slides[slideId - 1].imagePreview = image.src;
+        }
+      };
     }
-    // Restante da lógica da página de gerenciamento
   }
 
-  // Funções para manipular o upload de imagens
-  uploadBanner1Image() {
-    // Implemente a lógica de upload para o Banner 1
+  uploadImageSlide(slideId: number) {
+    const slide = this.slides[slideId - 1];
+
+    if (slide.imagePreview) {
+      // Lógica de envio da imagem para o servidor, se necessário
+    } else {
+      // Lidar com o caso em que nenhuma imagem foi selecionada.
+      console.log("Nenhuma imagem selecionada para o Slide " + slideId);
+    }
   }
 
-  uploadBanner2Image() {
-    // Implemente a lógica de upload para o Banner 2
+  validateImageAbout(event: any, aboutId: number) {
+    const file = event.target.files[0];
+    if (file) {
+      const image = new Image();
+      image.src = URL.createObjectURL(file);
+
+      image.onload = () => {
+        const minWidth = 1500; // Largura mínima desejada em pixels
+        const minHeight = 1000; // Altura mínima desejada em pixels
+        const maxWidth = 2000; // Largura máxima desejada em pixels
+        const maxHeight = 1080; // Altura máxima desejada em pixels
+
+        if (
+          image.width < minWidth ||
+          image.height < minHeight ||
+          image.width > maxWidth ||
+          image.height > maxHeight
+        ) {
+          alert(
+            `A imagem do Sobre-nós deve estar entre ${minWidth}x${minHeight} pixels e ${maxWidth}x${maxHeight} pixels.`
+          );
+          // Limpa o campo de entrada de arquivo
+          event.target.value = "";
+        } else {
+          // Atualize o objeto do slide correspondente com a imagemPreview
+          this.aboutus[aboutId - 1].imagePreviewAbout = image.src;
+        }
+      };
+    }
   }
 
-  uploadBanner3Image() {
-    // Implemente a lógica de upload para o Banner 3
+  uploadImageAbout(aboutId: number) {
+    const about = this.aboutus[aboutId - 1];
+
+    if (about.imagePreviewAbout) {
+      // Lógica de envio da imagem para o servidor, se necessário
+    } else {
+      // Lidar com o caso em que nenhuma imagem foi selecionada.
+      console.log("Nenhuma imagem selecionada para o Slide " + aboutId);
+    }
   }
 
-  uploadSobre1Image() {
-    // Implemente a lógica de upload para o Sobre 1
+validateImageFundo(event: any, fundoId: number){
+  const file = event.target.files[0];
+  if (file) {
+    const image = new Image();
+    image.src = URL.createObjectURL(file);
+
+    image.onload = () => {
+      const minWidth = 1500; // Largura mínima desejada em pixels
+      const minHeight = 1000; // Altura mínima desejada em pixels
+      const maxWidth = 2000; // Largura máxima desejada em pixels
+      const maxHeight = 1080; // Altura máxima desejada em pixels
+
+      if (
+        image.width < minWidth ||
+        image.height < minHeight ||
+        image.width > maxWidth ||
+        image.height > maxHeight
+      ) {
+        alert(
+          `A imagem do fundo deve estar entre ${minWidth}x${minHeight} pixels e ${maxWidth}x${maxHeight} pixels.`
+        );
+        // Limpa o campo de entrada de arquivo
+        event.target.value = "";
+      } else {
+        // Atualize o objeto do slide correspondente com a imagemPreview
+        this.fundoPage[fundoId - 1].imagePreviewFundo = image.src;
+      }
+    };
   }
 
-  uploadFundo1Image() {
-    // Implemente a lógica de upload para o Fundo 1
-  }
+}
 
-  uploadEmpresa1Image() {
-    // Implemente a lógica de upload para a Empresa 1
-  }
+uploadImageFundo(fundoId: number) {
+  const fundo = this.fundoPage[fundoId - 1];
 
-  // Funções para manipular a seleção de arquivos
-  onBanner1FileSelected(event: any) {
-    this.selectedBanner1Image = event.target.files[0];
+  if (fundo.imagePreviewFundo) {
+    // Lógica de envio da imagem para o servidor, se necessário
+  } else {
+    // Lidar com o caso em que nenhuma imagem foi selecionada.
+    console.log("Nenhuma imagem selecionada para o fundo " + fundoId);
   }
+}
 
-  onBanner2FileSelected(event: any) {
-    this.selectedBanner2Image = event.target.files[0];
-  }
 
-  onBanner3FileSelected(event: any) {
-    this.selectedBanner3Image = event.target.files[0];
-  }
-
-  onSobre1FileSelected(event: any) {
-    this.selectedSobre1Image = event.target.files[0];
-  }
-
-  onFundo1FileSelected(event: any) {
-    this.selectedFundo1Image = event.target.files[0];
-  }
-
-  onEmpresa1FileSelected(event: any) {
-    this.selectedEmpresa1Image = event.target.files[0];
-  }
-
-  // Outras funções e lógica necessárias
 }
