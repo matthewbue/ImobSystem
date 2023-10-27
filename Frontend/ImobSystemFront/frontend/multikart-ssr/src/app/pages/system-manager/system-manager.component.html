@@ -1,104 +1,36 @@
 <app-breadcrumb [title]="'Gerenciador'" [breadcrumb]="'Gerenciador'"></app-breadcrumb>
 
-<!-- Seção para Banner 1 -->
-<section class="pt-0 banner-6 mb-4 mt-4">
-  <form (ngSubmit)="uploadBanner1Image()" #banner1ImageForm="ngForm">
-    <div class="input-container">
-      <input type="file" (change)="onBanner1FileSelected($event)" #banner1FileInput>
-      <label class="label" for="banner1FileInput">Selecionar Imagem do Banner 1</label>
-    </div>
-    <button type="submit" [disabled]="!selectedBanner1Image">
-      <i class="fas fa-upload"></i> Enviar Imagem do Banner 1
-    </button>
-  </form>
-</section>
-
-<!-- Seção para Banner 2 -->
-<section class="pt-0 banner-6 mb-4 mt-4">
-  <div class="container">
-    <div class="image-upload">
-      <h2>Banner 2</h2>
-      <!-- Formulário e elementos de upload de imagem para Banner 2 -->
-      <!-- Substitua os identificadores de formulário e manipuladores de eventos de acordo com sua implementação -->
-      <form (ngSubmit)="uploadBanner2Image()" #banner2ImageForm="ngForm">
-        <input type="file" (change)="onBanner2FileSelected($event)" #banner2FileInput>
-        <button type="submit" [disabled]="!selectedBanner2Image">Enviar Imagem do Banner 2</button>
-      </form>
-      <div class="preview">
-        <img *ngIf="selectedBanner2Image" [src]="'/Frontend/ImobSystemFront/frontend/multikart-ssr/src/assets/images/banner'" alt="Imagem do Banner 2">
-      </div>
+<div class="card m-4" *ngFor="let slide of slides">
+  <div class="card-body">
+    <h3>Imagem Slide - {{ slide.id }}</h3>
+    <div>
+      <input type="file" (change)="validateImageSlide($event, slide.id)" accept="image/*">
+      <img *ngIf="slide.imagePreview" [src]="slide.imagePreview" alt="Preview" style="max-width: 100%; max-height: 300px;">
+      <button class="btn btn-success" style="float: right;" (click)="uploadImageSlide(slide.id)">Enviar</button>
     </div>
   </div>
-</section>
+</div>
 
-<!-- Seção para Banner 3 -->
-<section class="pt-0 banner-6 mb-4 mt-4">
-  <div class="container">
-    <div class="image-upload">
-      <h2>Banner 3</h2>
-      <!-- Formulário e elementos de upload de imagem para Banner 3 -->
-      <!-- Substitua os identificadores de formulário e manipuladores de eventos de acordo com sua implementação -->
-      <form (ngSubmit)="uploadBanner3Image()" #banner3ImageForm="ngForm">
-        <input type="file" (change)="onBanner3FileSelected($event)" #banner3FileInput>
-        <button type="submit" [disabled]="!selectedBanner3Image">Enviar Imagem do Banner 3</button>
-      </form>
-      <div class="preview">
-        <img *ngIf="selectedBanner3Image" [src]="'/Frontend/ImobSystemFront/frontend/multikart-ssr/src/assets/images/banner'" alt="Imagem do Banner 3">
-      </div>
+<div class="card m-4" *ngFor="let about of aboutus">
+  <div class="card-body">
+    <h3>Imagem Sobre-nós</h3>
+    <div>
+      <input type="file" (change)="validateImageAbout($event, about.id)" accept="image/*">
+      <img *ngIf="about.imagePreviewAbout" [src]="about.imagePreviewAbout" alt="Preview" style="max-width: 100%; max-height: 300px;">
+      <button class="btn btn-success" style="float: right;" (click)="uploadImageAbout(about.id)">Enviar</button>
     </div>
   </div>
-</section>
+</div>
 
-<!-- Seção para Sobre 1 -->
-<section class="pt-0 banner-6 mb-4 mt-4">
-  <div class="container">
-    <div class="image-upload">
-      <h2>Sobre 1</h2>
-      <!-- Formulário e elementos de upload de imagem para Sobre 1 -->
-      <!-- Substitua os identificadores de formulário e manipuladores de eventos de acordo com sua implementação -->
-      <form (ngSubmit)="uploadSobre1Image()" #sobre1ImageForm="ngForm">
-        <input type="file" (change)="onSobre1FileSelected($event)" #sobre1FileInput>
-        <button type="submit" [disabled]="!selectedSobre1Image">Enviar Imagem para Sobre 1</button>
-      </form>
-      <div class="preview">
-        <img *ngIf="selectedSobre1Image" [src]="'/Frontend/ImobSystemFront/frontend/multikart-ssr/src/assets/images/banner'" alt="Imagem para Sobre 1">
-      </div>
+<div class="card m-4" *ngFor="let fundo of fundoPage">
+  <div class="card-body">
+    <h3>Imagem Fundo Site</h3>
+    <div>
+      <input type="file" (change)="validateImageFundo($event, fundo.id)" accept="image/*">
+      <img *ngIf="fundo.imagePreviewFundo" [src]="fundo.imagePreviewFundo" alt="Preview" style="max-width: 100%; max-height: 300px;">
+      <button class="btn btn-success" style="float: right;" (click)="uploadImageFundo(fundo.id)">Enviar</button>
     </div>
   </div>
-</section>
+</div>
 
-<!-- Seção para Fundo 1 -->
-<section class="pt-0 banner-6 mb-4 mt-4">
-  <div class="container">
-    <div class="image-upload">
-      <h2>Fundo 1</h2>
-      <!-- Formulário e elementos de upload de imagem para Fundo 1 -->
-      <!-- Substitua os identificadores de formulário e manipuladores de eventos de acordo com sua implementação -->
-      <form (ngSubmit)="uploadFundo1Image()" #fundo1ImageForm="ngForm">
-        <input type="file" (change)="onFundo1FileSelected($event)" #fundo1FileInput>
-        <button type="submit" [disabled]="!selectedFundo1Image">Enviar Imagem para Fundo 1</button>
-      </form>
-      <div class="preview">
-        <img *ngIf="selectedFundo1Image" [src]="'/Frontend/ImobSystemFront/frontend/multikart-ssr/src/assets/images/banner'" alt="Imagem para Fundo 1">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Seção para Empresa 1 -->
-<section class="pt-0 banner-6 mb-4 mt-4">
-  <div class="container">
-    <div class="image-upload">
-      <h2>Empresa 1</h2>
-      <!-- Formulário e elementos de upload de imagem para Empresa 1 -->
-      <!-- Substitua os identificadores de formulário e manipuladores de eventos de acordo com sua implementação -->
-      <form (ngSubmit)="uploadEmpresa1Image()" #empresa1ImageForm="ngForm">
-        <input type="file" (change)="onEmpresa1FileSelected($event)" #empresa1FileInput>
-        <button type="submit" [disabled]="!selectedEmpresa1Image">Enviar Imagem para Empresa 1</button>
-      </form>
-      <div class="preview">
-        <img *ngIf="selectedEmpresa1Image" [src]="'/Frontend/ImobSystemFront/frontend/multikart-ssr/src/assets/images/banner'" alt="Imagem para Empresa 1">
-      </div>
-    </div>
-  </div>
-</section>
