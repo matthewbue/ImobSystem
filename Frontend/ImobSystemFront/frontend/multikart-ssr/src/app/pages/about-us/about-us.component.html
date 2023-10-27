@@ -24,38 +24,74 @@
                     </p>
 
                     <!-- Inserir aqui a lista de soluções usando Bootstrap -->
-                    <h2 class="mt-5">Conheça nossas soluções:</h2>
-                    <ul>
-                        <li><strong>FINANÇAS</strong></li>
-                        <ul class="mb-2 mt-2">
-                            <li>Aplicativo com acesso 24H</li><br>
-                            <li>Prestação de Contas Digital</li><br>
-                            <li>Previsão orçamentária</li><br>
-                            <li>Saldo do Condomínio Online</li><br>
-                            <li>Relatório de Inadimplência</li><br>
-                            <li>Gestão Contábil</li><br>
-                            <li>Emissão de Boleto Bancário</li><br>
-                            <li>Gráficos com a visão geral da situação financeira do condomínio online</li><br>
-                        </ul>
-                        <li><strong>COMUNICAÇÃO</strong></li>
-                        <ul class="mb-2">
-                            <li>Circular</li><br>
-                            <li>Convocação</li><br>
-                            <li>Avisos</li><br>
-                            <li>Notificação</li><br>
-                        </ul>
-                        <li><strong>ASSEMBLÉIAS</strong></li>
-                        <ul class="mb-2">
-                            <li>Redação e envio do Edital de Convocação;</li>
-                            <li>Assessoria na realização, com a presença de membros da nossa equipe;</li>
-                            <li>Elaboração de ata, registro da mesma em cartório e distribuição aos condôminos</li>
-                        </ul>
-                        <li><strong>GESTÃO DE PESSOAL</strong></li>
-                        <ul>
-                            <li>Folha de Pagamento, encargos, benefícios, admissão, demissão, toda rotina departamento
-                                de pessoal</li>
-                        </ul>
-                    </ul>
+                    <h2 class="text-center">Conheça nossas soluções:</h2>
+                    <style>
+                        .solutions-list {
+                            list-style-type: none;
+                            padding: 0;
+                        }
+                    
+                        .solution {
+                            margin-bottom: 1rem;
+                        }
+                    
+                        .solution h3 {
+                            font-weight: bold;
+                        }
+                    
+                        .solution ul {
+                            padding-left: 0;
+                        }
+                    
+                        .solution ul li::before {
+                            content: "\2022"; /* Adiciona um ponto de tópico (•) antes de cada item da lista */
+                            margin-right: 5px;
+                        }
+                    </style>
+                    
+                    <div class="solutions-list mt-5">
+                        <div class="solution">
+                            <h3>FINANÇAS</h3>
+                            <ul class="mb-4">
+                                <li>Aplicativo com acesso 24H</li><br/>
+                                <li>Prestação de Contas Digital</li><br/>
+                                <li>Previsão orçamentária</li><br/>
+                                <li>Saldo do Condomínio Online</li><br/>
+                                <li>Relatório de Inadimplência</li><br/>
+                                <li>Gestão Contábil</li><br/>
+                                <li>Emissão de Boleto Bancário</li><br/>
+                                <li>Gráficos com a visão geral da situação financeira do condomínio online</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="solution">
+                            <h3>COMUNICAÇÃO</h3>
+                            <ul class="mb-4">
+                                <li>Circular</li><br/>
+                                <li>Convocação</li><br/>
+                                <li>Avisos</li><br/>
+                                <li>Notificação</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="solution">
+                            <h3>ASSEMBLÉIAS</h3>
+                            <ul class="mb-4">
+                                <li>Redação e envio do Edital de Convocação</li>
+                                <li>Assessoria na realização, com a presença de membros da nossa equipe</li>
+                                <li>Elaboração de ata, registro da mesma em cartório e distribuição aos condôminos</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="solution">
+                            <h3>GESTÃO DE PESSOAL</h3>
+                            <ul>
+                                <li>Folha de Pagamento, encargos, benefícios, admissão, demissão, toda rotina departamento de pessoal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
